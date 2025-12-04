@@ -1,0 +1,7 @@
+{
+  "name": "Global Importer Scout",
+  "description": "A financial intelligence tool to find, verify, and aggregate contact information for global importers using Gemini with Google Search and Maps grounding. Includes n8n integration patterns.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
