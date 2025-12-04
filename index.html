@@ -53,5 +53,18 @@
 </head>
   <body class="bg-slate-50 text-slate-900 antialiased">
     <div id="root"></div>
+    <!-- Polyfill for process.env to prevent crashes in browser -->
+    <script>
+      window.process = {
+        env: {
+          NODE_ENV: 'development',
+          // If you are not using a bundler to inject the key, 
+          // you can temporarily uncomment the line below for testing (NOT RECOMMENDED FOR PRODUCTION)
+          // API_KEY: 'YOUR_GEMINI_API_KEY_HERE' 
+        }
+      };
+    </script>
+    <!-- Entry Point for React App -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
